@@ -7,6 +7,7 @@ router = DefaultRouter()
 router.register(r'flights', views.FlightViewSet)
 router.register(r'planes', views.PlaneViewSet)
 router.register(r'tickets', views.TicketViewSet)
+router.register(r'users', views.UserViewSet)
 
 
 
