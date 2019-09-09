@@ -29,6 +29,8 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class TicketSerializer(serializers.HyperlinkedModelSerializer):
+    user = serializers.ReadOnlyField(source='user.username')
+
     class Meta:
         model = Ticket
         fields = ['url', 'id', 'user', 'flight']
