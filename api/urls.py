@@ -20,7 +20,7 @@ urlpatterns = [
         title="Airport CRM",
         description="API for Airport CRM app"
         ), name="openapi-schema"),
-    path('swagger-ui/', TemplateView.as_view(
+    path('docs/', TemplateView.as_view(
         template_name='swagger-ui.html',
         extra_context={'schema_url':'openapi-schema'}
     ), name="swagger-ui")
